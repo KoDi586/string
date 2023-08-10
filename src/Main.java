@@ -1,5 +1,51 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        task1();
+        task2();
+
+    }
+
+    public static void task1() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 1 =========\n" +
+                "=============================\n");
+
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("ФИО сотрудника — " + fullName);
+
+
+
+
+
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 2 =========\n" +
+                "=============================\n");
+
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase());
+    }
+
+
+
+
+    public static void task2() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 3 =========\n" +
+                "=============================\n");
+
+        String firstName = "Семён";
+        String middleName = "Семёнович";
+        String lastName = "Иванов";
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        fullName = fullName.replace('ё', 'е');
+
+        System.out.println("Данные ФИО сотрудника — " + fullName);
     }
 }
